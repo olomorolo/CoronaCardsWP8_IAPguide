@@ -1,6 +1,6 @@
 module(..., package.seeall);
 
--- this method cuts searches for a newline symbol and cuts the string to a table
+-- this method searches for a newline symbol and cuts the prices strings to a table
 local function cutString(text)
 	local price = {} 
 	local start = 1
