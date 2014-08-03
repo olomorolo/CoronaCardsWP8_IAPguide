@@ -9,3 +9,12 @@ Note that IAP methods will work ONLY with submitted public and beta app versions
 4. Reuse the same code for the release app
 
 In the MainPage.xaml.cs file all the code blocks used for IAP I'm commenting starting with "//IAP_TUTORIAL: " so that you know which part is necessary to implement for IAPs.
+
+These are the files including IAP code you should look for:
+
+MainPage.xaml.cs
+IAP.cs
+
+main.lua
+menu.lua
+IAP.lua
