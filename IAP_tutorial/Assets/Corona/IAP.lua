@@ -27,7 +27,7 @@ function readPrices()
 	   io.close(file);	
 	   price = cutString(contents)
 	else
-		price = {"price1", "price2", "price3"}
+		price = {"price1 lua", "price2 lua", "price3 lua"}
 	end
 	return price
 end
