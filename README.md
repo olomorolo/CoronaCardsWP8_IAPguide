@@ -13,8 +13,12 @@ In the MainPage.xaml.cs file all the code blocks used for IAP I'm commenting sta
 These are the files including IAP code you should look for:
 
 MainPage.xaml.cs
+
 IAP.cs
 
+
 main.lua
+
 menu.lua
+
 IAP.lua
