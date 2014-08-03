@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>CoronaLabs.Corona.Controls.DotNet</name>
+  </assembly>
+  <members>
+    <member name="T:CoronaLabs.Corona.WinRT.Phone.CoronaPanel">
+      <summary>
+             Corona Xaml control used to execute a Corona project's Lua scripts and render its content via Direct3D.
+            </summary>
+    </member>
+    <member name="M:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.#ctor">
+      <summary>Creates a new Corona panel.</summary>
+    </member>
+    <member name="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.AutoLaunchEnabled">
+      <summary>
+             Sets whether or not this control will automatically start the Corona runtime when loaded onto the page.
+            </summary>
+    </member>
+    <member name="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.AutoLaunchSettings">
+      <summary>
+        <para>
+              Gets the settings to be used when this control automatically starts up the Corona runtime when loaded
+              onto the page.
+             </para>
+        <para>Only applicable when the <see cref="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.AutoLaunchEnabled" /> property has been set to true.</para>
+      </summary>
+    </member>
+    <member name="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.BackgroundContentProvider">
+      <summary>
+             Gets an object used to render content to a DrawingSurfaceBackgroundGrid Xaml control if the
+             <see cref="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.BackgroundRenderingEnabled" /> property is set to true.
+            </summary>
+    </member>
+    <member name="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.BackgroundManipulationHandler">
+      <summary>
+             Gets an object used to receive touch input from a DrawingSurfaceBackgroundGrid Xaml control if the
+             <see cref="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.BackgroundRenderingEnabled" /> property is set to true.
+            </summary>
+    </member>
+    <member name="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.BackgroundRenderingEnabled">
+      <summary>
+             Gets or sets whether or not Corona will render content within this control's bounds
+             or to a DrawingSurfaceBackgroundGrid Xaml control.
+            </summary>
+    </member>
+    <member name="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.Children">
+      <summary>Gets a collection of child UI elements/control to be displayed within the Corona panel's bounds.</summary>
+    </member>
+    <member name="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.RenderSurface">
+      <summary>Gets the 3D rendering surface that the Corona runtime renders to.</summary>
+    </member>
+    <member name="P:CoronaLabs.Corona.WinRT.Phone.CoronaPanel.Runtime">
+      <summary>Gets a Corona runtime used to run, suspend, resume, and terminate a Corona project.</summary>
+    </member>
+  </members>
+</doc>

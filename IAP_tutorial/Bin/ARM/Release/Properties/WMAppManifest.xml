@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{d7c4dbdc-44fd-40df-9ddc-3615142304a7}" Title="IAP_tutorial" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="IAP_tutorial author" Description="Sample description" Publisher="IAP_tutorial" PublisherID="{aa4e6b5a-f264-46aa-9636-4b1c631d7690}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="IAP_tutorialToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <Title>IAP_tutorial</Title>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI></DeviceLockImageURI>
+          <HasLarge></HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ActivatableClasses>
+      <InProcessServer>
+        <Path>CoronaLabs.Corona.Component.dll</Path>
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaBoxedList" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaBoxedBoolean" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaBoxedData" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaBoxedNumber" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.WinRT.Utf8String" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaBoxedString" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaBoxedTable" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaLuaEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaLuaEventProperties" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.ReadOnlyCoronaLuaEventProperties" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.WinRT.OperationResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.WinRT.EmptyEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaRuntimeEnvironment" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaRuntimeEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaRuntime" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.CoronaRuntimeLaunchSettings" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.CoronaInteropSettings" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.DispatchCoronaLuaEventResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.UI.PageOrientation" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.UI.PageOrientationEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.WinRT.CancelEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.UI.PageProxy" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.RelativeOrientation2D" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Input.Key" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Input.KeyEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Input.TapEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Input.TouchPhase" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Input.TouchEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Input.TouchTracker" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Input.TouchTrackerCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.InteropServices" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Phone.Interop.Graphics.Direct3DSurfaceAdapter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.Bitmap" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.PixelFormat" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.BitmapInfo" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.BitmapSettings" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.BitmapConverter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.ImageDecoderSettings" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.BitmapInfoResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.BitmapResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.FontSettings" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.HorizontalAlignment" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.PixelFormatSet" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.RenderSurfaceProxy" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Graphics.TextRendererSettings" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Sensors.AccelerometerMonitor" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Sensors.CoronaAccelerometerHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Sensors.CoronaGyroscopeHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.Corona.WinRT.Interop.Sensors.GyroscopeMonitor" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="CoronaLabs.WinRT.HandledEventArgs" ThreadingModel="both" />
+      </InProcessServer>
+    </ActivatableClasses>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
+<!-- WPSDK Version 8.0.9900 -->
