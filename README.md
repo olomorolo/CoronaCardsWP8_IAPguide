@@ -1,0 +1,2 @@
+CoronaCardsWP8_IAPguide
+=======================
