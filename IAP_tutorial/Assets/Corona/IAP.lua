@@ -27,6 +27,7 @@ function readPrices()
 	   io.close(file);	
 	   price = cutString(contents)
 	else
+		-- if there's no file (i.e. testing on simulator) then I'm declaring temp values
 		price = {"price1 lua", "price2 lua", "price3 lua"}
 	end
 	return price
