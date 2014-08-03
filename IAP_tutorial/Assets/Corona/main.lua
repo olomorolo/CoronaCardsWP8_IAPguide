@@ -48,7 +48,7 @@ Runtime:addEventListener("purchase", onPurchase)
 
 -- I'm anticipating the scene load for 3s to make sure that the prices are already fetched from Windows Phone Store.
 -- I'm doing this only because I'm displaying the prices instantly after application load. You won't need to do this
--- if you don't display the prices on screen as fast as I do in this example.
+-- if you don't display the prices in the first visible scene.
 local gotoSceneTimer
 gotoSceneTimer = timer.performWithDelay( 3000, function(e) 
 	composer.gotoScene("menu");
