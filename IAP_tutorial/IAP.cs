@@ -19,7 +19,7 @@ namespace Helpers
             Product3,
         }
 
-        // The IAP identifier from the enum names
+        // These are the Product Identifier names that you declared in Windows Phone Dev Center Dashboard:
         static string GetIAPIdentifier(AvailableIAPs IAP)
         {
             switch (IAP)
