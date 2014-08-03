@@ -14,16 +14,19 @@ function scene:create( event )
 
 	local function buyProductOne(event)
 		print("attempting to buy Product One")
+		--dispatch event to C#
   	 	Runtime:dispatchEvent( {name = "buyProductOne"} ) 
 	end
 	
 	local function buyProductTwo(event)
 		print("attempting to buy Product Two")
+		--dispatch event to C#
 	  	Runtime:dispatchEvent( {name = "buyProductTwo"} ) 
 	end
 	
 	local function buyProductThree(event)
 		print("attempting to buy Product Three")
+		--dispatch event to C#
   	 	Runtime:dispatchEvent( {name = "buyProductThree"} ) 
 	end
 
