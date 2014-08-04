@@ -78,7 +78,7 @@ namespace IAP_tutorial
 
             if (PurchaseSuccessful)
             {
-                // I’m passing purchased coins value here but you can add anything you wish to
+                // Iâ€™m passing purchased coins value here but you can add anything you wish to
                 OnPurchase(sender, 3000);
             }
             else
@@ -94,7 +94,7 @@ namespace IAP_tutorial
 
             if (PurchaseSuccessful)
             {
-                // I’m passing purchased coins value here but you can add anything you wish to
+                // Iâ€™m passing purchased coins value here but you can add anything you wish to
                 OnPurchase(sender, 7000);
             }
             else
@@ -109,7 +109,7 @@ namespace IAP_tutorial
 
             if (PurchaseSuccessful)
             {
-                // I’m passing purchased coins value here but you can add anything you wish to
+                // Iâ€™m passing purchased coins value here but you can add anything you wish to
                 OnPurchase(sender, 12000);
             }
             else
@@ -122,7 +122,7 @@ namespace IAP_tutorial
         private void OnPurchase(
         CoronaLabs.Corona.WinRT.CoronaRuntimeEnvironment sender, int coinsValue)
         {
-            // I’m passing purchased coins value here but you can add anything you wish to 
+            // Iâ€™m passing purchased coins value here but you can add anything you wish to 
             var eventProperties = CoronaLabs.Corona.WinRT.CoronaLuaEventProperties.CreateWithName("purchase");
             eventProperties.Set("coins", coinsValue);
 
@@ -136,7 +136,7 @@ namespace IAP_tutorial
             var result = sender.DispatchEvent(new CoronaLabs.Corona.WinRT.CoronaLuaEventArgs(eventProperties));
         }
 
-        // IAP_TUTORIAL: I temporarly set the prices to text value that will be overrided when fetching real prices from store
+        // IAP_TUTORIAL: I temporarly set the prices to text value that will be overridden when fetching real prices from store
         // If you comment out upvalue calls from OnNavigatedTo() method - then you'll see that the prices are fetched form the Prices.txt file
         // If you're testing a local build, not a beta version, but you leave the upvalue calls - then your price labels will be blank since 
         // the method won't connect to the store with the local app build and it'll upvalue the prices with null.
